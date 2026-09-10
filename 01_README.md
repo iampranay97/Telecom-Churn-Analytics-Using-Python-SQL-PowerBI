@@ -49,7 +49,7 @@ Performed initial data inspection, type casting, missing value treatment, and di
 * Conducted univariate and bivariate EDA to evaluate churn correlation with contract types and tenure.
 * Generated baseline distribution plots to guide SQL query logic and Power BI visual layouts.
 
-**Python Notebook:** [telecom_churn_eda.ipynb](python/telecom_churn_eda.ipynb)
+**Python Notebook:** [telecom_churn_eda.ipynb](03_data_cleaning_and_preprocessing.ipynb)
 
 ---
 
@@ -59,7 +59,7 @@ Structured PostgreSQL queries to aggregate core KPIs and extract customer risk s
 * Built window functions to rank active accounts by `MonthlyCharges` to surface top revenue-at-risk customers.
 * Validated total revenue loss metrics against raw dataset aggregations.
 
-**SQL File:** [churn_analysis_queries.sql](sql/churn_analysis_queries.sql)
+**SQL File:** [churn_analysis_queries.sql](04_SQL_Analysis.sql)
 
 ---
 
@@ -74,7 +74,7 @@ An executive summary view displaying top-tier KPIs, contract churn distribution,
 * **Donut Chart (Churned Customers by Internet Service):** Breaks down churned subscribers by service type, illustrating that Fiber Optic accounts for the vast majority of lost customers (69.4%).
 * **Table Visual (Top 10 High-Risk Accounts):** Dynamically lists active Month-to-month Fiber Optic customers with tenure <= 12 months, sorted by highest monthly charges for immediate intervention.
 
-**Power BI Dashboard File:** [Telecom_Churn_Analytics.pbix](powerbi/Telecom_Churn_Analytics.pbix)
+**Power BI Dashboard File:** [Telecom_Churn_Analytics.pbix](05_Telecom_Churn_Analytics.pbix)
 
 ---
 
@@ -111,4 +111,4 @@ An executive summary view displaying top-tier KPIs, contract churn distribution,
 ## Dashboard Preview
 
 ### Churn Analytics
-![Churn Analytics](docs/churn_analytics_dashboard.png)
+![Churn Analytics](06_Dashboard_Preview.png)
